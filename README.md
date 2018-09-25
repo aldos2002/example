@@ -4,7 +4,8 @@
 **mvn archetype:generate -DarchetypeGroupId=org.apache.maven.archetypes -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.3**
 
 2. Add a class HelperApp and test class HelperAppTest  
-3. Start ping-pong:  
+3. Start ping-pong pair programming:  
+![TDD_steps](TDD_steps.png)  
     3.1 write a test that defines first method with basic functionality, that returns:
         "Hello, {name}!"  
         using string concatenation `test RED`  

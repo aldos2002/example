@@ -1,11 +1,10 @@
 package com.epam;
 
-import org.hamcrest.core.Is;
 import org.junit.Test;
 
 import java.time.LocalTime;
 
-import static org.junit.Assert.assertThat;
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 /**
@@ -16,20 +15,15 @@ public class HelperAppTest {
     private HelperApp app = new HelperApp();
 
     @Test
-    public void shouldAnswerWithTrue() {
-        assertTrue(true);
-    }
-
-    @Test
     public void personalizedGreeting_shouldReturnGreetingWithAName_whenGivenName() {
         //GIVEN
         String expectedGreeting = "Hello, Tom!";
 
         //WHEN
-        String greeting = app.personalizedGreeting("Tom", LocalTime.now());
+        String greeting = app.personalizedGreeting("Tom");
 
         //THEN
-        assertThat(greeting, Is.is(expectedGreeting));
+        assertEquals(greeting, expectedGreeting);
     }
 
     @Test
@@ -42,6 +36,6 @@ public class HelperAppTest {
         String greeting = app.personalizedGreeting("Tom", localTime);
 
         //THEN
-        assertThat(greeting, Is.is(expectedGreeting));
+        assertEquals(greeting, expectedGreeting);
     }
 }

@@ -11,6 +11,10 @@ public class HelperApp {
         if (localTime.getHour() < 12) {
             return String.format("Good morning, %s!", name);
         }
+        return personalizedGreeting(name);
+    }
+
+    public String personalizedGreeting(String name) {
         return String.format("Hello, %s!", name);
     }
 }

@@ -5,7 +5,7 @@
 
 2. Add a class HelperApp and test class HelperAppTest  
 3. Start ping-pong pair programming:  
-![TDD_steps](TDD_steps.png)  
+![TDD_steps](red-green-refactor.png)  
     3.1 write a test that defines first method with basic functionality, that returns:
         "Hello, {name}!"  
         using string concatenation `test RED`  

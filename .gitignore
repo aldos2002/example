@@ -1,0 +1,15 @@
+## Idea
+
+*.ipr
+*.iml
+*.iws
+
+.idea/
+.shelf/
+
+## VSCode
+.vscode/
+
+## Maven
+
+target/

@@ -7,7 +7,6 @@ import java.time.LocalTime;
  */
 public class App {
     public static void main(String[] args) {
-        HelperApp helperApp = new HelperApp();
-        System.out.println(helperApp.personalizedGreeting("Tom", LocalTime.now()));
+
     }
 }
